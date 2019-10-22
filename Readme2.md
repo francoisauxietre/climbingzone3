@@ -1,4 +1,14 @@
-# ===================================================================
+##lancement de l'application
+
+dans le dossier docker-compose up
+./mvnm
+et lancer la back end dans intelij
+
+verfication qu'un seul docker mysql est en place
+base de donnee climbingzone3 fafa1 fafa1 port 3008
+lancement sur port 8081
+
+si plusieurs processus sont sur le port les effaccer avec
 
 # sudo netstat -lpn |grep :8080
 
