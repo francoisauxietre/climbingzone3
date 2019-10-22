@@ -64,6 +64,7 @@ local.properties
 *.orig
 classes/
 out/
+/data
 
 ######################
 # Visual Studio Code
