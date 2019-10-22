@@ -1,5 +1,9 @@
 # ===================================================================
 
+# sudo netstat -lpn |grep :8080
+
+# kill NOprocessus
+
 # Spring Boot configuration for the "dev" profile.
 
 #
