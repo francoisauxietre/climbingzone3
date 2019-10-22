@@ -1,0 +1,43 @@
+{
+    "name": "Place",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "latitude",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "longitude",
+            "fieldType": "Float"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "parking",
+            "otherEntityRelationshipName": "place",
+            "relationshipName": "parkings",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "climbingRoute",
+            "otherEntityRelationshipName": "place",
+            "relationshipName": "located",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191022111931",
+    "entityTableName": "place",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Card",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "climber",
+            "otherEntityRelationshipName": "cards",
+            "relationshipName": "climber"
+        }
+    ],
+    "changelogDate": "20191022111932",
+    "entityTableName": "card",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

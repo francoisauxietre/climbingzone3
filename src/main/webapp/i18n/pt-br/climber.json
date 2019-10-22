@@ -1,0 +1,33 @@
+{
+  "climbingzone3App": {
+    "climber": {
+      "home": {
+        "title": "Climbers",
+        "createLabel": "Criar novo Climber",
+        "createOrEditLabel": "Criar ou editar Climber",
+        "notFound": "Nenhum Climber encontrado"
+      },
+      "created": "Um novo Climber foi criado com o identificador {{ param }}",
+      "updated": "Um Climber foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Climber foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Climber {{ id }}?"
+      },
+      "detail": {
+        "title": "Climber"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "birth": "Birth",
+      "createdAt": "Created At",
+      "modifiedAt": "Modified At",
+      "deletedAt": "Deleted At",
+      "language": "Language",
+      "country": "Country",
+      "cards": "Cards",
+      "openBy": "Open By",
+      "friends": "Friends",
+      "fromFriends": "From Friends"
+    }
+  }
+}

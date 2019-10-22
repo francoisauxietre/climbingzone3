@@ -1,0 +1,31 @@
+{
+    "name": "Parking",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "place",
+            "otherEntityRelationshipName": "parkings",
+            "relationshipName": "place"
+        }
+    ],
+    "changelogDate": "20191022111933",
+    "entityTableName": "parking",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

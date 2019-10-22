@@ -1,0 +1,38 @@
+{
+  "climbingzone3App": {
+    "climbingRoute": {
+      "home": {
+        "title": "Climbing Routes",
+        "createLabel": "Create a new Climbing Route",
+        "createOrEditLabel": "Create or edit a Climbing Route",
+        "notFound": "No Climbing Routes found"
+      },
+      "created": "A new Climbing Route is created with identifier {{ param }}",
+      "updated": "A Climbing Route is updated with identifier {{ param }}",
+      "deleted": "A Climbing Route is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Climbing Route {{ id }}?"
+      },
+      "detail": {
+        "title": "Climbing Route"
+      },
+      "name": "Name",
+      "bonus": "Bonus",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "difficuty": "Difficuty",
+      "star": "Star",
+      "physical": "Physical",
+      "technical": "Technical",
+      "tactical": "Tactical",
+      "mental": "Mental",
+      "createdAt": "Created At",
+      "modifiedAt": "Modified At",
+      "deletedAt": "Deleted At",
+      "routeType": "Route Type",
+      "zouneType": "Zoune Type",
+      "place": "Place",
+      "opener": "Opener"
+    }
+  }
+}

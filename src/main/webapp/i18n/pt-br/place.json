@@ -1,0 +1,26 @@
+{
+  "climbingzone3App": {
+    "place": {
+      "home": {
+        "title": "Places",
+        "createLabel": "Criar novo Place",
+        "createOrEditLabel": "Criar ou editar Place",
+        "notFound": "Nenhum Place encontrado"
+      },
+      "created": "Um novo Place foi criado com o identificador {{ param }}",
+      "updated": "Um Place foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Place foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Place {{ id }}?"
+      },
+      "detail": {
+        "title": "Place"
+      },
+      "name": "Name",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "parkings": "Parkings",
+      "located": "Located"
+    }
+  }
+}

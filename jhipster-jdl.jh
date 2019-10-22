@@ -58,27 +58,27 @@ entity Parking {
 
 
 relationship ManyToOne {
-	Climber{cards} to Card{climbers}
+	Climber{cards} to Card{climber}
 }
 
 relationship ManyToMany {
-	Climber{friends} to Climber
-}
-
-relationship OneToMany {
-	Climber{climbingroute} to ClimbingRoute
-}
-
-relationship OneToOne {
-	ClimbingRoute{place} to Place
-}
-
-relationship OneToMany {
-	Climber{country} to Country
+	Climber{friends} to Climber{fromFriends}
 }
 
 relationship ManyToOne {
-	Place to Parking{place}
+	Climber{openBy} to ClimbingRoute{opener}
+}
+
+relationship OneToMany {
+	ClimbingRoute{place} to Place{located}
+}
+
+relationship OneToMany {
+	Climber{country} to Country{climbers}
+}
+
+relationship ManyToOne {
+	Place{parkings} to Parking{place}
 }
 
 // Set pagination options

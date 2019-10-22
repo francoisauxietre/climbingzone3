@@ -1,0 +1,91 @@
+{
+    "name": "ClimbingRoute",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "bonus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "latitude",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "longitude",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "difficuty",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "star",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "physical",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "technical",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tactical",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mental",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "modifiedAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "deletedAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "routeType",
+            "fieldType": "RouteType",
+            "fieldValues": "BOULDER,ROUTE"
+        },
+        {
+            "fieldName": "zouneType",
+            "fieldType": "ZoneType",
+            "fieldValues": "INTERIOR,EXTERIOR"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "place",
+            "otherEntityRelationshipName": "located",
+            "relationshipName": "place"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "climber",
+            "otherEntityRelationshipName": "openBy",
+            "relationshipName": "opener"
+        }
+    ],
+    "changelogDate": "20191022111929",
+    "entityTableName": "climbing_route",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

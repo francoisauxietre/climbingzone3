@@ -1,0 +1,82 @@
+{
+    "name": "Climber",
+    "fields": [
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "birth",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "modifiedAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "deletedAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "language",
+            "fieldType": "Language",
+            "fieldValues": "FRENCH,ENGLISH,SPANISH"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "country",
+            "otherEntityRelationshipName": "climbers",
+            "relationshipName": "country"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "card",
+            "otherEntityRelationshipName": "climber",
+            "relationshipName": "cards",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "climbingRoute",
+            "otherEntityRelationshipName": "opener",
+            "relationshipName": "openBy",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "climber",
+            "otherEntityRelationshipName": "fromFriends",
+            "relationshipName": "friends",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "climber",
+            "otherEntityRelationshipName": "friends",
+            "relationshipName": "fromFriends",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191022111928",
+    "entityTableName": "climber",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

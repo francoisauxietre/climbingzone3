@@ -1,0 +1,9 @@
+{
+  "climbingzone3App": {
+    "RouteType": {
+      "null": "",
+      "BOULDER": "BOULDER",
+      "ROUTE": "ROUTE"
+    }
+  }
+}

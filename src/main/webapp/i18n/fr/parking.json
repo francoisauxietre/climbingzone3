@@ -1,0 +1,24 @@
+{
+  "climbingzone3App": {
+    "parking": {
+      "home": {
+        "title": "Parkings",
+        "createLabel": "Créer un nouveau Parking",
+        "createOrEditLabel": "Créer ou éditer un Parking",
+        "notFound": "Aucun Parking trouvé"
+      },
+      "created": "Un nouveau Parking a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Parking avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Parking avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Parking {{ id }} ?"
+      },
+      "detail": {
+        "title": "Parking"
+      },
+      "name": "Name",
+      "description": "Description",
+      "place": "Place"
+    }
+  }
+}
