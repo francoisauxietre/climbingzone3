@@ -1,0 +1,16 @@
+version: '2'
+services:
+  climbingzone3-app:
+    image: climbingzone3
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://climbingzone3-mysql:3306/climbingzone3?useUnicode=true&characterEncoding=utf8&useSSL=false
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+    ports:
+      - 8081:8081
+  climbingzone3-mysql:
+    extends:
+      file: mysql.yml
+      service: climbingzone3-mysql

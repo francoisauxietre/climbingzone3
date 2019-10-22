@@ -1,0 +1,49 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "climbingzone3",
+    "packageName": "com.climbingzone3",
+    "packageFolder": "com/climbingzone3",
+    "serverPort": 8081,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "fr",
+      "pt-br",
+      "es"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.4.1",
+    "jwtSecretKey": "ZmExOTcwNDdmMWRkZWJiZTVhNzFlNmY2Y2YzNTc4YjUxMWFhNDA2N2FhM2MwZDc0NDJlMjgwMDY1ODY4MTIxYjMwZmZhZGM1N2U1ZWRkOTdlZTkwM2RjODg0NzQ5ODVkZWNiNWQyMjc0ZDMwYjM1NTYyNmRiZGRkNzdmM2RjMTA=",
+    "embeddableLaunchScript": false,
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "francoisauxietre",
+  "repository-name": "climbingzone3"
+}
