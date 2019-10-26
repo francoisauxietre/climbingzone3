@@ -92,6 +92,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: crimson;
   top: 10em;
 }
 .app-loading p {

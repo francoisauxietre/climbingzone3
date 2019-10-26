@@ -61,10 +61,14 @@ export class Climber extends React.Component<IClimberProps, IClimberState> {
     this.props.getEntities(activePage - 1, itemsPerPage, `${sort},${order}`);
   };
 
+
+
+
+
   render() {
     const { climberList, match } = this.props;
     return (
-      <div>
+     <div>
         <h2 id="climber-heading">
           <Translate contentKey="climbingzone3App.climber.home.title">Climbers</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
@@ -204,3 +208,13 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Climber);
+
+function tick() {
+  const element = (
+    <div>
+      <h1>Bonjour, monde !</h1>
+      <h2>Il est {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+setInterval(tick, 1000);

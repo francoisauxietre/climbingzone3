@@ -1,8 +1,45 @@
 ##lancement de l'application
 
+lancement du docker docker-compose up
+base donnee
+lancement du siste npm start 
+
+acces au site
+http://localhost:8081/
+connexion comme utilisateur user user 
+comme admin   admin admin
+
+app.scss  pour le css le plus haut
+dans entities cest la vue donc modifier 
+et dans share model  objet    representation front de ton dto 
+4 a changer 
+dto climber.model.ts climber.tsx et le mapper
+
+acces au swagger 
+http://localhost:8081/swagger-ui/index.html
+
+
 dans le dossier docker-compose up
-./mvnm
+./mvnw
 et lancer la back end dans intelij
+
+pour lancer un bash dans le docker de mysql
+sudo docker exec -it 3f58ed84ebcc bash
+
+pour se logger sous mysql 
+mysql -u root -p 
+ avec root comme mot de passe   (root)
+afficher les utilisateurs
+select user, host from mysql.user;
+Creation et affichage de BD
+CREATE DATABASE climbingzone;
+SHOW DATABASES;
+se mettre dans une base 
+use climbingzone1;
+GRANT ALL PRIVILEGES ON climbingzone1.* TO 'fafa1'@'localhost' IDENTIFIED BY 'fafa1';
+
+
+
 
 verfication qu'un seul docker mysql est en place
 base de donnee climbingzone3 fafa1 fafa1 port 3008
